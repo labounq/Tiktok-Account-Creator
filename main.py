@@ -20,13 +20,17 @@ def run():
     print("[*] Starting Standalone Registration Flow...")
     
     import os
+    from dotenv import load_dotenv
+    load_dotenv()
+    
     if not os.getenv("RAPIDAPI_KEY"):
-        print("\n[-] Error: Missing RAPIDAPI_KEY!")
-        print("[-] Please create a '.env' file in this folder and add your key.")
-        print("[-] Format: RAPIDAPI_KEY=your_api_key_here")
-        print("[-] You can get your key (it's free) here: https://rapidapi.com/labouakileed122/api/tiktok-signer-working\n")
+        print("\n[-] Error: No RapidAPI key found.")
+        print("[-] Please create a '.env' file in this directory and add your key: RAPIDAPI_KEY=your_key_here")
+        print("[-] You can get a free API key at: https://rapidapi.com/labouakileed122/api/tiktok-signer-working")
+        print("[-] Press Enter to exit...")
+        input()
         return
-        
+
     config = load_config()
     ids = generate_ids()
     session = requests.Session()
