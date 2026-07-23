@@ -11,7 +11,7 @@ Script to create TikTok accounts automatically using mobile endpoints (android)
 
 2. **Get your API key**
    - Grab a free key on RapidAPI: [TikTok Signer API](https://rapidapi.com/labouakileed122/api/tiktok-signer-working)
-   - *required to sign requests, free tier will allow you to create ~10 accounts, then you'll have to pay. I have to make money somehow yk*
+   - *The key is required to sign requests, free tier will allow you to create ~10 accounts, then you'll have to pay. I have to make money somehow yk*
 
 3. **Configure environment**
    Create a `.env` file in the folder root:
