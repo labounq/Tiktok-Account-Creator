@@ -164,7 +164,7 @@ def run():
     print("\n--- 2. Age Verification ---")
     age_params = get_base_params(config, ids)
     import random
-    birth_year = random.randint(1980, 2002)
+    birth_year = random.randint(1990, 2007)
     birth_month = random.randint(1, 12)
     birth_day = random.randint(1, 28)
     birthday_str = f"{birth_year}-{birth_month:02d}-{birth_day:02d}"
