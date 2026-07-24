@@ -392,7 +392,7 @@ def run():
         "req_id": ids.get("req_id", ""),
         "apk_first_install_time": ids.get("apk_first_install_time", 0),
         "cookies": session.cookies.get_dict(),
-        "final_tg_server_data": final_tg_server_data,
+        "tt-ticket-guard-server-data": final_tg_server_data,
         "response_headers": dict(resp_ver.headers),
         "response": resp_ver.json() if resp_ver.status_code == 200 else resp_ver.text
     }
